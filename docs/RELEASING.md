@@ -19,4 +19,4 @@ Include `SHA256SUMS`, `sources.lock.json`, `release-manifest.json` and hardware 
 
 The release manifest records the exact device commit separately from the source lock to avoid a self-referential commit hash. It also records artifact names, sizes and SHA256 values, build provenance and tested device variants. Do not attach personal backups or vendor binaries without confirmed redistribution permission.
 
-There is no automatic image build, flashing, OTA delivery or release publication configured yet.
+The device workflow builds kernel/boot, and local userdata assembly requires a reviewed manual vendor input. Neither workflow flashes a phone nor creates release tags or public releases. An initial candidate name is `pdx213-noble-port-v0.1.0-alpha.1`, only after input provenance, stock-baseline installation/restoration and exact-build device qualification are resolved.
