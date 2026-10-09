@@ -12,7 +12,7 @@ Only the 24.04 release line is currently planned for support.
 
 ## Status
 
-Sony Xperia 10 III sources are published as an experimental community port for XQ-BT52. The device repository contains the locked Noble adaptation and real kernel/boot workflow; the buildable kernel branch is `pdx213-halium11-noble`, with full upstream history and in-tree AppArmor/PMF changes. Manual vendor/OEM provenance, stock-baseline installation/restoration and remaining hardware qualification still gate an installable release. No public image release, OTA channel or universal UBports Installer integration is provided.
+Sony Xperia 10 III sources are published as an experimental community port for XQ-BT52. The device repository contains the locked Noble adaptation and real kernel/boot workflow; the buildable kernel branch is `main`, with full upstream history and in-tree AppArmor/PMF changes. Manual vendor/OEM provenance, stock-baseline installation/restoration and remaining hardware qualification still gate an installable release. No public image release, OTA channel or universal UBports Installer integration is provided.
 
 Future device ports should have their own `ut-device-<vendor>-<codename>` repository. Kernel repositories use the `ut-kernel-` prefix and may be shared by compatible devices.
 
