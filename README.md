@@ -12,7 +12,7 @@ Only the 24.04 release line is currently planned for support.
 
 ## Status
 
-Sony Xperia 10 III sources are published as an experimental community port for XQ-BT52. The device repository contains the locked Noble adaptation and real kernel/boot workflow; the buildable kernel branch is `main`, with full upstream history and in-tree AppArmor/PMF changes. Manual vendor/OEM provenance, stock-baseline installation/restoration and remaining hardware qualification still gate an installable release. No public image release, OTA channel or universal UBports Installer integration is provided.
+Sony Xperia 10 III sources are published as an experimental community port for XQ-BT52. The device repository contains the locked Noble adaptation and full image assembly workflow; the buildable kernel branch is `main`, with full upstream history and in-tree AppArmor/PMF changes. CI uses a published, checksum-pinned vendor input with a pinned build report and assembles boot, DTBO, userdata and vbmeta candidates. Sony OEM must be obtained separately by the device owner. Publication of the vendor input was authorized by the maintainer; the Sony audio-calibration licensing clarification remains unresolved. Stock-baseline installation/restoration and remaining hardware qualification still gate an installation release. Kernel/boot development prereleases and CI candidate artifacts are available; no installation release, OTA channel or universal UBports Installer integration is provided.
 
 Future device ports should have their own `ut-device-<vendor>-<codename>` repository. Kernel repositories use the `ut-kernel-` prefix and may be shared by compatible devices.
 
@@ -32,5 +32,5 @@ Private data must never be committed or attached to a release.
 
 The [device build instructions](https://github.com/Actinis/ut-device-sony-pdx213/blob/main/docs/BUILD.md)
 and [input contract](https://github.com/Actinis/ut-device-sony-pdx213/blob/main/docs/SOURCES.md)
-separate reproducible kernel/boot compilation, manual image inputs and actual
+separate verified CI image assembly, owner-supplied Sony OEM and actual
 phone qualification. Only the current Noble adaptation is supported.
